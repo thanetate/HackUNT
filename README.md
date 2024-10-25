@@ -1,2 +1,1 @@
-# HackUNT2024
-University of North Texas Hackathon 2024
+UNT Hackathon 2024
