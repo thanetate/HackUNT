@@ -25,11 +25,15 @@ export default function Home() {
       </div>
       {/* Our Approach */}
       <div className="approach-container">
-        <h2 className="approach-title">Our Approach</h2>
-        <p className="approach-text">
-          We believe that every monster deserves to find their perfect match.
-          That's why we've created a platform where monsters can connect with
-          other monsters who share their interests, values, and goals.
+        <h2 className="approach-title">Our Spooktacular Approach</h2>
+        <img className="approach-img" src="" alt="Arrow"/>
+            <p className="approach-text">
+          
+               We believe that every monster deserves to find their perfect match.
+         
+               That's why we've created a platform where monsters can connect with
+          
+               other monsters who share their interests, values, and goals.
         </p>
       </div>
       {/* What Other Monsters are Saying / User Feedback */}
