@@ -1,3 +1,5 @@
+"use client";
+
 import TinderCard from 'react-tinder-card';
 import React, { useState } from 'react';
 
@@ -8,9 +10,9 @@ type Character = {
 };
 
 const db = [ 
-    { name: 'Emily', url: '/emily.jpg' },
-    { name: 'John', url: '/john.jpg' },
-    { name: 'Sarah', url: '/sarah.jpg' },
+    { name: 'Emily', url: '/Capture.PNG' },
+    { name: 'John', url: '/IMG_5709.jpg' },
+    { name: 'Sarah', url: '/fall2024Schedule.PNG' },
 ];
 
 const TinderCards = () => {
@@ -31,6 +33,7 @@ const TinderCards = () => {
               key={character.name}
               onSwipe={(dir) => onSwipe(dir, character.name)}
               onCardLeftScreen={() => onCardLeftScreen(character.name)}
+              preventSwipe={["up", "down"]}
             >
               <div style={{ backgroundImage: `url(${character.url})` }}>
                 <h3>{character.name}</h3>
