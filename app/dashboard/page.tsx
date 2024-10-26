@@ -1,9 +1,11 @@
 import React from "react";
+import '../styles/dash.css'
+import Header from "../components/Header";
 
 const dashboard = () => {
   return (
     <>
-    <h1>Dash</h1>
+    <Header />
     
     
     </>
