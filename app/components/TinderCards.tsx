@@ -27,7 +27,15 @@ const TinderCards = () => {
     };
 
     return (
-        <div>
+        <div style={{
+          height: '100vh',
+          width: '100vw',
+          overflow: 'hidden',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}>
           {characters.map((character) => (
             <TinderCard
               key={character.name}
