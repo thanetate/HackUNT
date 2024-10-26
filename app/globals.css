@@ -1,4 +1,50 @@
-.landing {
-  border-color: red;
-  border-style: double;
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+/* temporary fix */
+html {
+  background-color: white;
+}
+body {
+  margin: 0;
+}
+
+.landing-container {
+  /* border-color: red;
+  border-style: double; */
+  background-color: #E75E3E;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5rem;
+  padding: 7.6rem;
+}
+
+.landing-title {
+  color: white;
+  font-family: "Lacquer", serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.landing-img {
+  float: right;
+}
+
+.approach-container {
+  background-color: white;
+}
+
+.approach-title {
+  color: BLACK;
+  font-family: "Lacquer", serif;
+  font-weight: 400;
+  font-style: normal;
+ 
+}
+
+.approach-text {
+  color: BLACK;
 }
