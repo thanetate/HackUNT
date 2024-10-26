@@ -11,8 +11,6 @@
 	flex-direction: row;
 	width: 100%;
 	height: 80px;
-	border-color: red;
-	border-style: double;
 }
 .title {
 	font-size: xx-large;
@@ -45,6 +43,36 @@
 .bar {
 	margin-top: 25px;
 	font-family: "Underdog", system-ui;
+	font-weight: 400;
+	font-style: normal;
+}
+.dash-page {
+    background-color: white;
+}
+.left-card-container {
+    width: 350px;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    background-color: #E75E3E;
+}
+.redirect-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-top: 20px;
+}
+.redirect-container button {
+    margin-left: 15px;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    width: auto;
+    border: none; 
+    background: none; 
+    font-size: x-large;
+    color: white;
+    font-family: "Lacquer", system-ui;
 	font-weight: 400;
 	font-style: normal;
 }
