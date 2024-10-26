@@ -13,6 +13,9 @@ export default function Home() {
       <button>
         <Link href="/login">Login</Link>
       </button>
+      <button>
+        <Link href="/swipe">Swipe</Link>
+      </button>
       <Link href="/dashboard">Dashboard</Link>
       {/* Landing Area */}
       <div className="landing-container">
