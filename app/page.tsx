@@ -1,4 +1,4 @@
-import Image from "next/image";import styles from "./page.modeul.css";
+// import Image from "next/image";
 import Header from "./components/Header";
 import Link from "next/link";
 
