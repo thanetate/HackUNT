@@ -17,6 +17,7 @@ export default function Home() {
       {/* Landing Area */}
       <div className="landing-container">
         <h1 className="landing-title">Where Monsters Find Their Matches</h1>
+        {/* replace this with svg file */}
         <img
           className="landing-img"
           src="./pumpkin_mainhome_icon.png"
@@ -26,7 +27,7 @@ export default function Home() {
       {/* Our Approach */}
       <div className="approach-container">
         <h2 className="approach-title">Our Spooktacular Approach</h2>
-        <img className="approach-img" src="" alt="Arrow"/>
+        <img className="approach-img" src="./pumpkin_skull.svg" alt="pumpkin"/>
             <p className="approach-text">
           
                We believe that every monster deserves to find their perfect match.
