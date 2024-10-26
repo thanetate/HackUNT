@@ -1,5 +1,6 @@
 import Image from "next/image";import styles from "./page.modeul.css";
 import Header from "./components/Header";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,6 +10,9 @@ export default function Home() {
         {/* Landing Area */}
           <div className="landing">
           <h1 className="landing-desc">Where Monsters Find Their Matches</h1>
+      <Link href="/signup">Signup</Link>
+      <Link href="/login">Login</Link>
+      <Link href="/dashboard">Dashboard</Link>
           <img src="./pumpkin_mainhome_icon.png" alt="Monster Match Logo"/>
           <button>Sign Up</button>
         </div>
