@@ -7,35 +7,44 @@ import "./TinderCards.css"
 // Define a type for the character object
 type Character = {
   name: string;
-  url: string;
+  images: string[];
 };
 
 const db = [ 
-    { name: 'Emily', url: '/Capture.PNG' },
-    { name: 'John', url: '/IMG_5709.jpg' },
-    { name: 'Sarah', url: '/fall2024Schedule.PNG' },
+    { name: 'Ooze', images: ['/ooze.jpg', '/ooze1.jpg', '/ooze2.jpg'] },
+    { name: 'Ghost', images: ['/ghost.jpg', '/ghost1.jpg', '/ghost2.jpg'] },
+    { name: 'Werewolf', images: ['/werewolf.jpg', '/werewolf1.jpg', '/werewolf2.jpg'] },
 ];
 
 const TinderCards = () => {
     const [characters, setCharacters] = useState(db);
-    const [isDragging, setIsDragging] = useState(false);
+    const [currentImageIndices, setCurrentImageIndices] = useState(
+      Array(db.length).fill(0) // Track current image index for each character
+    );
 
     const onSwipe = (direction: string, name: string) => {
         console.log(`You swiped ${direction} on ${name}`);
-        setIsDragging(false); // Ensure dragging is reset
       };
 
     const onCardLeftScreen = (myIdentifier: string) => {
         console.log(myIdentifier + ' left the screen');
     };
 
-    const handleMouseDown = () => {
-        setIsDragging(true);
-    };
+    const handleNextImage = (index: number) => {
+      setCurrentImageIndices((prevIndices) => {
+          const newIndices = [...prevIndices];
+          newIndices[index] = (newIndices[index] + 1) % characters[index].images.length;
+          return newIndices;
+      });
+  };
 
-    const handleMouseUp = () => {
-        setIsDragging(false);
-    };
+  const handlePrevImage = (index: number) => {
+    setCurrentImageIndices((prevIndices) => {
+        const newIndices = [...prevIndices];
+        newIndices[index] = (newIndices[index] - 1 + characters[index].images.length) % characters[index].images.length;
+        return newIndices;
+    });
+};
 
     return (
         <div>
@@ -51,7 +60,7 @@ const TinderCards = () => {
                 swipeThreshold={300}
               >
                 <div style={{ 
-                  backgroundImage: `url(${character.url})`, 
+                  backgroundImage: `url(${character.images})`, 
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   width: '300px',
