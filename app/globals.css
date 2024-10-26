@@ -21,12 +21,14 @@ body {
   padding: 7.6rem;
 }
 
+/* this needs to be moved up the page by about 15px */
 .landing-title {
   color: white;
   font-family: "Lacquer", serif;
-  font-weight: 400;
-  font-style: normal;
-  
+  font-weight: 800;
+  font-style: bold;
+  font-size: 60px;
+  padding: 0.625rem;
 }
 
 .landing-img {
@@ -40,8 +42,10 @@ body {
 .approach-title {
   color: BLACK;
   font-family: "Lacquer", serif;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
+  margin-left: 10px;
+  font-size: 48px;
  
 }
 
