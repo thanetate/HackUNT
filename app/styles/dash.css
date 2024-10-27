@@ -55,6 +55,8 @@
     display: flex;
     flex-direction: column;
     background-color: #E75E3E;
+    border-color: red;
+    border-style: dashed;
 }
 .redirect-container {
     display: flex;

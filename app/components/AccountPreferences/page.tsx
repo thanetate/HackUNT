@@ -1,6 +1,7 @@
-import { useState } from "react";
+
+
 function AccountPreferences() {
-    const [selectedOption, setSelectedOption] = useState("Zombie");
+
 
 	return (
 		<>
@@ -14,7 +15,7 @@ function AccountPreferences() {
 			<div className="middle-spooky-title">What kind of monster are you?</div>
             <input
         className="middle-select-box"
-        value={selectedOption}
+		value={"Zombie"}
         readOnly
         // onChange={handleOptionChange}
       />
@@ -38,6 +39,7 @@ function AccountPreferences() {
 				<img src="./trash.svg" alt="trash icon" />
 				Remove
 			</button>
+
 		</>
 	);
 }
