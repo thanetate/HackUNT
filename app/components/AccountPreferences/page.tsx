@@ -1,8 +1,4 @@
-
-
 function AccountPreferences() {
-
-
 	return (
 		<>
 			<h1>Account Preferences</h1>
@@ -13,23 +9,22 @@ function AccountPreferences() {
 				// onChange={handleNameChange}
 			/>
 			<div className="middle-spooky-title">What kind of monster are you?</div>
-            <input
-        className="middle-select-box"
-		value={"Zombie"}
-        readOnly
-        // onChange={handleOptionChange}
-      />
-            <div className="middle-des-title">Description</div>
+			<input
+				className="middle-select-box"
+				value={"Zombie"}
+				readOnly
+				// onChange={handleOptionChange}
+			/>
+			<div className="middle-des-title">Description</div>
 			<textarea
 				className="middle-des-box"
 				// value={longdesc}
 				// onChange={handleLongDescChange}
 			></textarea>
 
-            <div className="main-profile-pic">
+			<div className="main-profile-pic">
 				{/* Calls avatar and bc avatar is set to a url we can just src the url */}
-				{/* {avatar && <img src={avatar} alt="User Avatar" />} */}
-                .
+				{/* {avatar && <img src={avatar} alt="User Avatar" />} */}.
 			</div>
 			<button className="middle-change-btn">
 				<img src="./img.svg" alt="picture icon" />
@@ -39,7 +34,6 @@ function AccountPreferences() {
 				<img src="./trash.svg" alt="trash icon" />
 				Remove
 			</button>
-
 		</>
 	);
 }
