@@ -1,22 +1,35 @@
 // import Image from "next/image";
 import Header from "./components/Header";
 import Link from "next/link";
+import './styles/dash.css';
 
 export default function Home() {
   return (
     <main>
       {/* Header will need logo, links, log in button, and nav */}
-      <Header />
-      <button>
-        <Link href="/signup">Signup</Link>
-      </button>
-      <button>
-        <Link href="/login">Login</Link>
-      </button>
-      <Link href="/dashboard">Dashboard</Link>
+      <div className="nav-container">
+				<div className="title">Monster Match</div>
+				<div className="nav-links-container">
+          <Link href="/">
+            <p className="redirects">Home</p>
+          </Link>
+          <div className="bar">|</div>
+          <Link href="/swipe">
+            <p className="redirects">Swipes</p>
+          </Link>
+          <div className="bar">|</div>
+          <Link href="/dashboard">
+            <p className="redirects">Dashboard</p>
+          </Link>
+				</div>
+			</div>
+
       {/* Landing Area */}
       <div className="landing-container">
-        <h1 className="landing-title">Where Monsters Find Their Matches</h1>
+        <div>
+          <h1 className="landing-title">Where Monsters Find Their Matches</h1>
+          <button className="landing-button">Get Started</button>
+        </div>
         {/* replace this with svg file */}
         <img
           className="landing-img"
@@ -26,7 +39,9 @@ export default function Home() {
       </div>
       {/* Our Approach */}
       <div className="approach-container">
-        <h2 className="approach-title">Our Spooktacular Approach</h2>
+        <div>
+          <h2 className="approach-title">Our Spooktacular Approach</h2>
+        </div>
         <img className="approach-img" src="./pumpkin_skull.svg" alt="pumpkin"/>
             <p className="approach-text">
           
